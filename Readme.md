@@ -74,3 +74,6 @@ git push -u origin main
 # TL;DR (I will do it myself)
 
 https://github.com/skills/introduction-to-github
+
+
+md stands for Mark Down language
