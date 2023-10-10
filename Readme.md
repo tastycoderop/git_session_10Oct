@@ -1,5 +1,15 @@
 # GIT Session Readme
 
+Basic and Most Widely used commands:
+
+```
+git clone git@github.com:SanketSDeshmukh/git_session_10Oct.git
+git checkout branch_name 
+git pull
+git push
+
+```
+
 
 ## Local Setup 
 ```
@@ -26,22 +36,41 @@ cat ~/.ssh/id_rsa.pub
 ```
 
 ## Workflow 1: 
-Working on an existing code repo om github
+Working on an existing code repo from github
+Say you want to work on a copy of main branch
 
-# Git Clone
-git clone 
+```
+git clone <url>
+git checkout main
+git checkout -b subbranch_of_main main
+git commit -m 'some feature work'
 
-# Git PULL
-# GIT PUSH 
+```
 
-## Workflow 2:
+## Workflow 2: 
+I am a Newbie and want to start from scratch
 
-mkdir github
-cd github
+```
+echo "# git_session_10Oct" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:SanketSDeshmukh/git_session_10Oct.git
+git push -u origin main
+```
 
+## Workflow 3:
+You have some code and want to start version controlling it. 
+Create a new repo and push your code there
 
-git remote add origin https://[TOKEN]@github.com/[REPO-OWNER]/[REPO_NAME]         
+```
+cd your_code_path
+git remote add origin git@github.com:SanketSDeshmukh/git_session_10Oct.git
+git branch -M main
+git push -u origin main
+```
 
-https://@github.com/SanketSDeshmukh/Hello-World.git
+# TL;DR (I will do it myself)
 
-
+https://github.com/skills/introduction-to-github
